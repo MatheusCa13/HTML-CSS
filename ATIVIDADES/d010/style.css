@@ -62,7 +62,7 @@ header > h1{
 
 header > p {
     color: white;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
     font-size: 1.2em ;
     color: white;
     max-width: 600px;
