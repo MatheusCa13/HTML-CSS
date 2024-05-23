@@ -23,15 +23,26 @@
         td.num{
             text-align: right;
         }
+        tbody > tr:nth-child(2n){
+            background-color: gray;
+        }
+
+        caption{
+            font-size:1.5em ;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades federativas</caption>
         <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
+            <tr >
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tr>
@@ -142,7 +153,7 @@
                 </tr>
         </tbody>
         <tfoot>
-            <tr>
+            <tr scope="row">
                 <th>Total de habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
